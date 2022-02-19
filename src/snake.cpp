@@ -13,7 +13,7 @@ snake::snake(int x,int y){
     memset(room,false,sizeof(room));
     to.clear();score=0;
     while(!q.empty())q.pop();
-	for(int i=1;i<=y||i<=x;i++)room[1][i]=room[12][i]=room[i][1]=room[i][12]=true;
+	for(int i=1;i<=y||i<=x;i++)room[1][i]=room[y][i]=room[i][1]=room[i][x]=true;
     q.push(make_pair(5,10)),room[5][10]=true;
     q.push(make_pair(5,9)),room[5][9]=true;
     q.push(make_pair(5,8)),room[5][8]=true;
