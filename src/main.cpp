@@ -14,11 +14,11 @@ bool init(snake &s){
 }
 int main()
 {
-	flag:
-	snake s(12,12);
 	TCHAR ss[21];
 	StringCchPrintf(ss,21,TEXT("snakes"));
 	SetConsoleTitle(ss);
+	flag:
+	snake s(12,12);
 	system("mode con cols=15 lines=15");
     srand(time(NULL));
 	s.print();
